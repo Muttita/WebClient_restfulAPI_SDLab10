@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Author</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #EFE9E1;
+            color: #322D29;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            color: #741D29;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #D1C7BD;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
+        label {
+            font-weight: 500;
+            color: #322D29;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #741D29;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            background-color: #741D29;
+            border: none;
+            border-radius: 5px;
+            color: #EFE9E1;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #AC9CBD;
+            color: #322D29;
+        }
+        a {
+            color: #322D29;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add New Author</h1>
+    <form action="/web/addAuthor" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Add Author</button>
+    </form>
+    <a href="/web/authors">Back to List</a>
+</body>
+</html>

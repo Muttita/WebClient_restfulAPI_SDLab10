@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #EFE9E1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #741D29;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .nav {
+            text-align: center;
+        }
+        .nav a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #AC9CBD;
+            color: #322D29;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #741D29;
+            color: #EFE9E1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Author Management</h1>
+    <div class="nav">
+        <a th:href="@{/web/authors}">View Authors</a>
+        <a th:href="@{/web/createauthor}">Add New Author</a>
+    </div>
+</body>
+</html>
